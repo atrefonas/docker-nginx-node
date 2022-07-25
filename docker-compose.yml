@@ -11,11 +11,11 @@ services:
   node:
     image: node:10.14
     user: node
-    working_dir: /home/node/app
+    working_dir: /whatever
     environment:
       - NODE_ENV=production
     volumes:
-      - ./app:/home/node/app
+      - ./app:/whatever/app
     ports:
       - '3000:3000'
     command: 'npm start'
